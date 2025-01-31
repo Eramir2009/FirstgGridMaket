@@ -107,7 +107,7 @@ right.addEventListener('click', () => {
    
     if (currentWidth < 660 ){
 
-        if (change == 651){
+        if (change >= 0){
             amount=1
             change = 0
             slider.style.marginLeft = 0
@@ -121,7 +121,7 @@ right.addEventListener('click', () => {
         }
         }
         else if(660 < currentWidth && currentWidth <1000){
-            if (change == 0){
+            if (change === 0){
                 amount=1
                 change = 0
                 slider.style.marginLeft = 0
@@ -136,14 +136,14 @@ right.addEventListener('click', () => {
         }
         else{
     
-            if (change == 0){
+            if (change === 0){
                 amount=1
                 change = 0
                 slider.style.marginLeft = 0
         
             }
             else{
-                change=400
+                change+=400
         
                 slider.style.marginLeft = `${change}px`;
                 amount+=1
