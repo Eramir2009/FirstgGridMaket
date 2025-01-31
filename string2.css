@@ -1,0 +1,93 @@
+.string2 {
+    position: relative; /* Нужно для ::before */
+    background-image: url(./images/1_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.string2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 47, 48, 0.7); /* Прозрачный фон */
+    z-index: 0; /* Помещаем над фоном, но под контентом */
+}
+
+.background_str2 {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 15px;
+    
+}
+.box{
+    display: flex;
+        flex-direction: column;
+        max-width: 650px;
+        margin-left: 155px;
+        padding-top: 11%;
+    
+}
+h1{
+    color: white;
+    text-shadow: -3px 0px 4px black;
+    font-size: 40px;
+}
+.explore{
+    display: flex;
+}
+.text p{
+    color: white;
+    max-width: 650px;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+
+}
+.explore span{
+    color: #BAE249;
+}
+
+@media(max-width: 1000px){
+h1{
+    font-size: 27px;
+}
+.text p{
+    font-size: 12px;
+}
+.explore span{
+    font-size: 13px;
+}
+.explore{}
+.explore img{
+    width: 17px;
+}
+
+}
+
+
+@media(max-width: 660px){
+    h1{
+        font-size: 20px;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        max-width: 650px;
+        margin-left: 70px;
+        padding-top: 11%;
+        height: 100%;
+    }
+    .text p{
+        font-size: 10px;
+    }
+    .explore span {
+        font-size: 10px;
+    }
+    .string2{
+        background-size: auto;
+    }
+
+}

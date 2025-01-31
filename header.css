@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #1D2F30;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    justify-items: center;
+    align-items: center;
+
+}
+.menu{
+    width: 100%;
+}
+.menu ul{
+    display: flex;
+        color: white;
+        list-style: none;
+        font-size: 1.1rem;
+        justify-content: space-around;
+}
+.icons{
+    display: flex;
+        justify-content: space-around;
+        width: 100px;
+        align-items: center;
+}
+.icons img:first-child{
+    height: 20px;
+}
+.burger_menu{
+    display: flex;
+}
+.burger{
+    display: none;
+}
+@media (max-width: 660px){
+    header{
+        justify-content: space-between;
+    }
+    .burger_menu {
+        transition: 0.3s;
+
+        flex-direction: column;
+        background-color: #092a2b;
+        position: absolute;
+        z-index: 2;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        left: -1000px;
+    }
+    .act_burger_menu{
+        
+        transition: 0.3s;
+        left: 0;
+    }
+    .menu ul{
+        display: flex;
+                color: white;
+                list-style: none;
+                font-size: 1.1rem;
+                justify-content: space-around;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    }
+    .menu ul li{
+        border-bottom: 1px solid white;
+        width: 100%;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .icons{
+        display: flex
+        ;
+            justify-content: center;
+            width: 100px;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid white;
+            width: 100%;
+            gap: 24px;
+    }
+    .burger {
+        display: block;
+        width: 40px;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .line1 {
+        position: absolute;
+        top: 1px;
+        width: 100%;
+        border: 1px solid;
+        transition: 0.4s;
+        border-color: white;
+    }
+    .line2 {
+        width: 100%;
+        border: 1px solid;
+        margin-top: 10px;
+        border-color: white;
+
+    }
+    .line3 {
+        width: 100%;
+        border: 1px solid;
+        margin-top: 9px;
+        transition: 0.4s;
+        border-color: white;
+
+    }
+    .logo img{
+        margin-left: 20px;
+    }
+    .act_line1 {
+        rotate: 220deg;
+    }
+    .act_line2 {
+        display: none;
+    }
+    .act_line3 {
+        rotate: 140deg;
+        margin-top: 1px;
+    }
+}
+   
+    
+
